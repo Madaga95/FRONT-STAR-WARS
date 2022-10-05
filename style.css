@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+nav {
+  color: aliceblue;
+  background-color: transparent;
+  position: fixed;
+  z-index: 1000;
+  height: 90px;
+  width: 100%;
+}
+.nav-elements {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+nav li {
+  margin-right: 30px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+header {
+  background: url("assets/img/header-bg.png") center/cover;
+}
+header img {
+  position: relative;
+  left: 15%;
+}
+
+#battlefront {
+  font-size: 1.2rem;
+  padding: 100px;
+  display: grid;
+  grid-template-columns: 1fr 50%;
+  justify-items: center;
+  position: relative;
+  left: 110px;
+}
+
+#obscur img {
+  width: 100%;
+}
+.title {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#droïde {
+  padding: 100px;
+  font-size: 1.3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr;
+  grid-template-areas:
+    "i1 p1"
+    "ta ta";
+  align-items: stretch;
+  justify-items: center;
+}
+
+#image {
+  grid-area: i1;
+}
+#para {
+  grid-area: p1;
+}
+#para2 {
+  grid-area: ta;
+  padding: 20px 0px 0px 100px;
+}
+
+.stormtroopers {
+  
+}
+
+.storm {
+  width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  header{
+    width: 100%;
+  }
+  
+  #battlefront{
+    font-size: 1rem;
+  }
+  
+  #droïde{
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    flex-direction: column;
+  }
+  #image, #para{
+    position: relative;
+    left: 50px;
+    padding: 0px 0px 20px 0px;
+  }
+  #para2{
+    padding: 20px 0px 0px 50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header{
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 880px){
+  #ps4{
+    visibility: hidden;
+  }
+}
